@@ -1,0 +1,473 @@
+{
+  "last_scrape": "2026-04-04T16:50:21.469595",
+  "low_scores": [
+    {
+      "facility_name": "ABS STEAK",
+      "address": "8500 BEVERLY BLVD UNIT 111",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-25",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/ABS+STEAK+8500+BEVERLY+BLVD+UNIT+111+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "SPOON ME LATIN DELIGHTS",
+      "address": "14431 PIONEER BLVD",
+      "city": "NORWALK",
+      "inspection_date": "2026-03-24",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/SPOON+ME+LATIN+DELIGHTS+14431+PIONEER+BLVD+NORWALK+CA"
+    },
+    {
+      "facility_name": "LEE'S SANDWICHES",
+      "address": "1145 W CARSON ST",
+      "city": "TORRANCE",
+      "inspection_date": "2026-03-25",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/LEE%27S+SANDWICHES+1145+W+CARSON+ST+TORRANCE+CA"
+    },
+    {
+      "facility_name": "168 MARKET #801",
+      "address": "1421 E VALLEY BLVD",
+      "city": "ALHAMBRA",
+      "inspection_date": "2026-03-25",
+      "score": 77,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/168+MARKET+%23801+1421+E+VALLEY+BLVD+ALHAMBRA+CA"
+    },
+    {
+      "facility_name": "FARMER BOYS",
+      "address": "726 S ALAMEDA ST",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-24",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/FARMER+BOYS+726+S+ALAMEDA+ST+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "LOS JUGOS",
+      "address": "1115 WASHINGTON BLVD STE F",
+      "city": "MONTEBELLO",
+      "inspection_date": "2026-03-24",
+      "score": 73,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/LOS+JUGOS+1115+WASHINGTON+BLVD+STE+F+MONTEBELLO+CA"
+    },
+    {
+      "facility_name": "RAFAEL'S MAXICAN RESTAURANT",
+      "address": "2226 W BEVERLY BLVD",
+      "city": "MONTEBELLO",
+      "inspection_date": "2026-03-25",
+      "score": 71,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/RAFAEL%27S+MAXICAN+RESTAURANT+2226+W+BEVERLY+BLVD+MONTEBELLO+CA"
+    },
+    {
+      "facility_name": "DAN TANA'S",
+      "address": "9071 SANTA MONICA BLVD",
+      "city": "WEST HOLLYWOOD",
+      "inspection_date": "2026-03-25",
+      "score": 81,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/DAN+TANA%27S+9071+SANTA+MONICA+BLVD+WEST+HOLLYWOOD+CA"
+    },
+    {
+      "facility_name": "LONG'S FAMILY PASTRIES INC",
+      "address": "715 N SPRING ST",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-24",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/LONG%27S+FAMILY+PASTRIES+INC+715+N+SPRING+ST+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "BIANCHI THEATRES",
+      "address": "7770 E ROSECRANS AVE",
+      "city": "PARAMOUNT",
+      "inspection_date": "2026-03-24",
+      "score": 83,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/BIANCHI+THEATRES+7770+E+ROSECRANS+AVE+PARAMOUNT+CA"
+    },
+    {
+      "facility_name": "MARY'S BAKERY",
+      "address": "4523 SLAUSON AVE",
+      "city": "MAYWOOD",
+      "inspection_date": "2026-03-26",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/MARY%27S+BAKERY+4523+SLAUSON+AVE+MAYWOOD+CA"
+    },
+    {
+      "facility_name": "TACOS LA PERLA",
+      "address": "12823 S NORMANDIE AVE",
+      "city": "GARDENA",
+      "inspection_date": "2026-03-25",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/TACOS+LA+PERLA+12823+S+NORMANDIE+AVE+GARDENA+CA"
+    },
+    {
+      "facility_name": "QIN WEST CHINESE CUISINE",
+      "address": "727 N BROADWAY STE 111",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-26",
+      "score": 75,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/QIN+WEST+CHINESE+CUISINE+727+N+BROADWAY+STE+111+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "LITTLE SKEWER",
+      "address": "429 W GARVEY AVE",
+      "city": "MONTEREY PARK",
+      "inspection_date": "2026-03-26",
+      "score": 83,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/LITTLE+SKEWER+429+W+GARVEY+AVE+MONTEREY+PARK+CA"
+    },
+    {
+      "facility_name": "99 RANCH MARKET #13 - MAIN MARKET",
+      "address": "6450 SEPULVEDA BLVD STE #B",
+      "city": "VAN NUYS",
+      "inspection_date": "2026-03-24",
+      "score": 86,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/99+RANCH+MARKET+%2313+-+MAIN+MARKET+6450+SEPULVEDA+BLVD+STE+%23B+VAN+NUYS+CA"
+    },
+    {
+      "facility_name": "CHARLEY'S PHILLY STEAKS",
+      "address": "807 PLAZA DR",
+      "city": "WEST COVINA",
+      "inspection_date": "2026-03-24",
+      "score": 83,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/CHARLEY%27S+PHILLY+STEAKS+807+PLAZA+DR+WEST+COVINA+CA"
+    },
+    {
+      "facility_name": "DAVE & BUSTER'S",
+      "address": "6801 HOLLYWOOD BLVD #363",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-26",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/DAVE+%26+BUSTER%27S+6801+HOLLYWOOD+BLVD+%23363+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "YUPDDUK",
+      "address": "1131 1/2 BREA CANYON RD",
+      "city": "DIAMOND BAR",
+      "inspection_date": "2026-03-24",
+      "score": 81,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/YUPDDUK+1131+1%2F2+BREA+CANYON+RD+DIAMOND+BAR+CA"
+    },
+    {
+      "facility_name": "WOKCANO VALENCIA LLC",
+      "address": "24201 W VALENCIA BLVD STE 3452",
+      "city": "VALENCIA",
+      "inspection_date": "2026-03-23",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/WOKCANO+VALENCIA+LLC+24201+W+VALENCIA+BLVD+STE+3452+VALENCIA+CA"
+    },
+    {
+      "facility_name": "BLUEY'S SANTA MONICA",
+      "address": "1814 BERKELEY ST",
+      "city": "SANTA MONICA",
+      "inspection_date": "2026-03-27",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/BLUEY%27S+SANTA+MONICA+1814+BERKELEY+ST+SANTA+MONICA+CA"
+    },
+    {
+      "facility_name": "COLDSTONE WEST LA",
+      "address": "10875 PICO BLVD",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-23",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/COLDSTONE+WEST+LA+10875+PICO+BLVD+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "WABA GRILL",
+      "address": "14219 WESTERN AVE # E-F",
+      "city": "GARDENA",
+      "inspection_date": "2026-03-23",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/WABA+GRILL+14219+WESTERN+AVE+%23+E-F+GARDENA+CA"
+    },
+    {
+      "facility_name": "TIAN'S DIMSUM & FAST FOOD",
+      "address": "809 N HILL ST STE #A",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-23",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/TIAN%27S+DIMSUM+%26+FAST+FOOD+809+N+HILL+ST+STE+%23A+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "YUNNAN RESTAURANT",
+      "address": "301 N GARFIELD AVE STE D",
+      "city": "MONTEREY PARK",
+      "inspection_date": "2026-03-26",
+      "score": 73,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/YUNNAN+RESTAURANT+301+N+GARFIELD+AVE+STE+D+MONTEREY+PARK+CA"
+    },
+    {
+      "facility_name": "MARISSA'S CAKES",
+      "address": "12802 PARAMOUNT BLVD",
+      "city": "DOWNEY",
+      "inspection_date": "2026-03-24",
+      "score": 87,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/MARISSA%27S+CAKES+12802+PARAMOUNT+BLVD+DOWNEY+CA"
+    },
+    {
+      "facility_name": "GOLDEN CORRAL",
+      "address": "17308 BELLFLOWER BLVD",
+      "city": "BELLFLOWER",
+      "inspection_date": "2026-03-26",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/GOLDEN+CORRAL+17308+BELLFLOWER+BLVD+BELLFLOWER+CA"
+    },
+    {
+      "facility_name": "SAMOSA HOUSE SANTA MONICA",
+      "address": "2301 MAIN ST",
+      "city": "SANTA MONICA",
+      "inspection_date": "2026-03-24",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/SAMOSA+HOUSE+SANTA+MONICA+2301+MAIN+ST+SANTA+MONICA+CA"
+    },
+    {
+      "facility_name": "KRISTY'S MINI MARKET",
+      "address": "1632 E 33RD ST",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-25",
+      "score": 88,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/KRISTY%27S+MINI+MARKET+1632+E+33RD+ST+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "TWO HANDS HOT DOG",
+      "address": "118 JAPANESE VILLAGE PLAZA MALL 118",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-25",
+      "score": 82,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/TWO+HANDS+HOT+DOG+118+JAPANESE+VILLAGE+PLAZA+MALL+118+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "PANELAS BRAZIL CUISINE",
+      "address": "2808 PHELAN LN UNIT A",
+      "city": "REDONDO BEACH",
+      "inspection_date": "2026-03-26",
+      "score": 72,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/PANELAS+BRAZIL+CUISINE+2808+PHELAN+LN+UNIT+A+REDONDO+BEACH+CA"
+    },
+    {
+      "facility_name": "CORNER MARKET",
+      "address": "471 W LEXINGTON DR",
+      "city": "GLENDALE",
+      "inspection_date": "2026-03-26",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/CORNER+MARKET+471+W+LEXINGTON+DR+GLENDALE+CA"
+    },
+    {
+      "facility_name": "SABOR A MALIBU",
+      "address": "2557 CORTEZ ST",
+      "city": "OXNARD",
+      "inspection_date": "2026-03-23",
+      "score": 85,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/SABOR+A+MALIBU+2557+CORTEZ+ST+OXNARD+CA"
+    },
+    {
+      "facility_name": "SUBWAY #16373",
+      "address": "1075 N WESTERN AVE STE 108",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-26",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/SUBWAY+%2316373+1075+N+WESTERN+AVE+STE+108+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "JUE WEI FOOD",
+      "address": "818 E VALLEY BLVD",
+      "city": "SAN GABRIEL",
+      "inspection_date": "2026-03-25",
+      "score": 88,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/JUE+WEI+FOOD+818+E+VALLEY+BLVD+SAN+GABRIEL+CA"
+    },
+    {
+      "facility_name": "IDLE HOUR",
+      "address": "4824 VINELAND AVE",
+      "city": "NORTH HOLLYWOOD",
+      "inspection_date": "2026-03-26",
+      "score": 84,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/IDLE+HOUR+4824+VINELAND+AVE+NORTH+HOLLYWOOD+CA"
+    },
+    {
+      "facility_name": "THE HABIT BURGER GRILL #20",
+      "address": "3829 TORRANCE BLVD",
+      "city": "TORRANCE",
+      "inspection_date": "2026-03-25",
+      "score": 81,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/THE+HABIT+BURGER+GRILL+%2320+3829+TORRANCE+BLVD+TORRANCE+CA"
+    },
+    {
+      "facility_name": "TASTY BOX DIM SUM",
+      "address": "2839 S DIAMOND BAR BLVD # B",
+      "city": "DIAMOND BAR",
+      "inspection_date": "2026-03-24",
+      "score": 88,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/TASTY+BOX+DIM+SUM+2839+S+DIAMOND+BAR+BLVD+%23+B+DIAMOND+BAR+CA"
+    },
+    {
+      "facility_name": "LA CHA",
+      "address": "1249 W CARSON ST",
+      "city": "TORRANCE",
+      "inspection_date": "2026-03-25",
+      "score": 75,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/LA+CHA+1249+W+CARSON+ST+TORRANCE+CA"
+    },
+    {
+      "facility_name": "GOOP FOOD GROUP COMMISSARY",
+      "address": "345 N MAPLE DR STE 100",
+      "city": "BEVERLY HILLS",
+      "inspection_date": "2026-03-24",
+      "score": 70,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/GOOP+FOOD+GROUP+COMMISSARY+345+N+MAPLE+DR+STE+100+BEVERLY+HILLS+CA"
+    },
+    {
+      "facility_name": "YUM YUM DONUTS FRANCHISE 9235D",
+      "address": "700 N VINE ST",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-25",
+      "score": 79,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/YUM+YUM+DONUTS+FRANCHISE+9235D+700+N+VINE+ST+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "CHARLIE'S BEST BURGERS",
+      "address": "5138 E OLYMPIC BLVD",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-23",
+      "score": 62,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/CHARLIE%27S+BEST+BURGERS+5138+E+OLYMPIC+BLVD+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "JUST POP'N",
+      "address": "1030 E 25TH ST",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-24",
+      "score": 79,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/JUST+POP%27N+1030+E+25TH+ST+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "TACOS EL CHINO",
+      "address": "4654 W AVE L",
+      "city": "LANCASTER",
+      "inspection_date": "2026-03-24",
+      "score": 0,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/TACOS+EL+CHINO+4654+W+AVE+L+LANCASTER+CA"
+    },
+    {
+      "facility_name": "CENTRO LATINO MEAT #2",
+      "address": "8506 SANTA FE AVE",
+      "city": "HUNTINGTON PARK",
+      "inspection_date": "2026-03-24",
+      "score": 83,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/CENTRO+LATINO+MEAT+%232+8506+SANTA+FE+AVE+HUNTINGTON+PARK+CA"
+    },
+    {
+      "facility_name": "TRIO COFFEE",
+      "address": "42104 W 50TH ST",
+      "city": "QUARTZ HILL",
+      "inspection_date": "2026-03-26",
+      "score": 82,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/TRIO+COFFEE+42104+W+50TH+ST+QUARTZ+HILL+CA"
+    },
+    {
+      "facility_name": "JAOPAYA THAI RESTAURANT",
+      "address": "7321 RESEDA BLVD",
+      "city": "RESEDA",
+      "inspection_date": "2026-03-24",
+      "score": 85,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/JAOPAYA+THAI+RESTAURANT+7321+RESEDA+BLVD+RESEDA+CA"
+    },
+    {
+      "facility_name": "LAS PLEBES CHUCHERIAS",
+      "address": "6526 PACIFIC BLVD",
+      "city": "HUNTINGTON PARK",
+      "inspection_date": "2026-03-25",
+      "score": 82,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/LAS+PLEBES+CHUCHERIAS+6526+PACIFIC+BLVD+HUNTINGTON+PARK+CA"
+    },
+    {
+      "facility_name": "UME TEA",
+      "address": "11138 PALMS BLVD",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-24",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/UME+TEA+11138+PALMS+BLVD+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "MAGEE'S DONUTS",
+      "address": "6705 SANTA MONICA BLVD",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-26",
+      "score": 80,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/MAGEE%27S+DONUTS+6705+SANTA+MONICA+BLVD+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "CHO MAK",
+      "address": "357 S WESTERN BLVD STE 101",
+      "city": "LOS ANGELES",
+      "inspection_date": "2026-03-26",
+      "score": 72,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/CHO+MAK+357+S+WESTERN+BLVD+STE+101+LOS+ANGELES+CA"
+    },
+    {
+      "facility_name": "BAOSHUTANG RESTAURANT",
+      "address": "987 S GLENDORA AVE 5",
+      "city": "WEST COVINA",
+      "inspection_date": "2026-03-23",
+      "score": 75,
+      "grade": "C",
+      "google_maps_link": "https://www.google.com/maps/search/BAOSHUTANG+RESTAURANT+987+S+GLENDORA+AVE+5+WEST+COVINA+CA"
+    },
+    {
+      "facility_name": "WEIRDOUGHS LLC",
+      "address": "109 N PASS AVE",
+      "city": "BURBANK",
+      "inspection_date": "2026-03-25",
+      "score": 87,
+      "grade": "B",
+      "google_maps_link": "https://www.google.com/maps/search/WEIRDOUGHS+LLC+109+N+PASS+AVE+BURBANK+CA"
+    }
+  ]
+}

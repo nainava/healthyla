@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "timestamp": "2026-04-04T16:50:21.470676",
+      "message": "DONE: inspections.csv processed \u2014 52 restaurants scored below 90 (Mar 21-28). low_scores.json + low_scores.csv written."
+    },
+    {
+      "timestamp": "2026-04-04T16:47:00",
+      "message": "TODO: Build landing page (landing_page.html)"
+    },
+    {
+      "timestamp": "2026-04-04T16:47:00",
+      "message": "TODO: Build email template (email_template.html)"
+    },
+    {
+      "timestamp": "2026-04-04T16:47:00",
+      "message": "TODO: Build SMS messages (sms_messages.txt)"
+    },
+    {
+      "timestamp": "2026-04-04T16:47:00",
+      "message": "TODO: Build Google Sheet CSV (google_sheet_import.csv)"
+    },
+    {
+      "timestamp": "2026-04-04T16:47:00",
+      "message": "TODO: Build KML map file (map_pins.kml)"
+    },
+    {
+      "timestamp": "2026-04-04T16:47:00",
+      "message": "TODO: Build buyer leads script"
+    },
+    {
+      "timestamp": "2026-04-04T16:47:00",
+      "message": "TODO: Build README.md"
+    },
+    {
+      "timestamp": "2026-04-04T16:44:00",
+      "message": "inspections.csv found \u2014 115,817 rows. No header. Columns: Name, Date, Score, Address, City, ID"
+    },
+    {
+      "timestamp": "2026-04-04T16:40:00",
+      "message": "Closure data: user will drop closures CSV separately. Processing inspections.csv first."
+    },
+    {
+      "timestamp": "2026-04-04T16:11:00",
+      "message": "DONE: Dashboard HTML built. All JSON data files zeroed out."
+    },
+    {
+      "timestamp": "2026-04-04T16:08:00",
+      "message": "DONE: Project started. PROMPT.md saved. Output directory created."
+    }
+  ]
+}

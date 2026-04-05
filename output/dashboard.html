@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealthyLA — Ops Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+    background: #0d1117;
+    color: #c9d1d9;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #21262d;
+    margin-bottom: 20px;
+  }
+  header h1 { font-size: 18px; color: #f0f6fc; }
+  .refresh-info { font-size: 12px; color: #8b949e; }
+  .refresh-info .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .dot-green { background: #3fb950; }
+  .dot-red { background: #f85149; }
+  .dot-yellow { background: #d29922; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+
+  .card {
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8b949e;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card h2 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #21262d;
+  }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-label { color: #8b949e; }
+  .stat-value { color: #f0f6fc; font-weight: 600; }
+  .stat-value.red { color: #f85149; }
+  .stat-value.green { color: #3fb950; }
+  .stat-value.yellow { color: #d29922; }
+
+  .big-number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f0f6fc;
+    margin-bottom: 4px;
+  }
+  .big-label { color: #8b949e; font-size: 12px; }
+
+  .metrics {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  th {
+    text-align: left;
+    color: #8b949e;
+    font-weight: 500;
+    padding: 6px 8px;
+    border-bottom: 1px solid #21262d;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #21262d;
+  }
+  tr:last-child td { border-bottom: none; }
+
+  .alert-box {
+    background: #f8514922;
+    border: 1px solid #f8514955;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #f85149;
+  }
+  .alert-box.warning {
+    background: #d2992222;
+    border-color: #d2992255;
+    color: #d29922;
+  }
+  .alert-box.ok {
+    background: #3fb95022;
+    border-color: #3fb95055;
+    color: #3fb950;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .badge-email { background: #1f6feb33; color: #58a6ff; }
+  .badge-sms { background: #3fb95033; color: #3fb950; }
+  .badge-spreadsheet { background: #d2992233; color: #d29922; }
+  .badge-map { background: #bc8cff33; color: #bc8cff; }
+  .badge-standard { background: #21262d; color: #8b949e; }
+  .badge-priority { background: #f8514933; color: #f85149; }
+
+  .full-width { grid-column: 1 / -1; }
+  .subscriber-channels { display: flex; gap: 4px; flex-wrap: wrap; }
+
+  .activity-entry {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #21262d;
+    font-size: 13px;
+  }
+  .activity-entry:last-child { border-bottom: none; }
+  .activity-time { color: #8b949e; white-space: nowrap; min-width: 140px; }
+  .activity-msg { color: #c9d1d9; }
+  .activity-empty { color: #8b949e; text-align: center; padding: 16px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>HealthyLA Ops Dashboard</h1>
+    <div class="refresh-info">
+      <span class="dot dot-green" id="liveIndicator"></span>
+      Auto-refresh: 60s | <span id="lastRefresh"></span>
+    </div>
+  </header>
+
+  <div id="alerts"></div>
+
+  <!-- ACTIVITY LOG -->
+  <div class="card" style="margin-bottom:16px;">
+    <h2>Activity Log</h2>
+    <div id="activityLog" style="max-height:180px;overflow-y:auto;"></div>
+  </div>
+
+  <div class="grid">
+    <!-- DATA STATUS -->
+    <div class="card">
+      <h2><span class="dot" id="dataStatusDot"></span> Data Status</h2>
+      <div class="metrics">
+        <div>
+          <a href="closures.html" style="text-decoration:none;">
+            <div class="big-number" id="closureCount" style="cursor:pointer;">—</div>
+            <div class="big-label">Active Closures <span style="color:#58a6ff;font-size:11px;">View all &rarr;</span></div>
+          </a>
+        </div>
+        <div>
+          <a href="low_scores.html" style="text-decoration:none;">
+            <div class="big-number" id="lowScoreCount" style="cursor:pointer;">—</div>
+            <div class="big-label">B/C Grades (7d) <span style="color:#58a6ff;font-size:11px;">View all &rarr;</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Last scrape</span>
+        <span class="stat-value" id="lastScrape">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Data age</span>
+        <span class="stat-value" id="dataAge">—</span>
+      </div>
+    </div>
+
+    <!-- SUBSCRIBER STATUS -->
+    <div class="card">
+      <h2><span class="dot dot-green"></span> Subscribers</h2>
+      <div class="metrics">
+        <div>
+          <div class="big-number" id="subCount">—</div>
+          <div class="big-label">Paying Subscribers</div>
+        </div>
+        <div>
+          <div class="big-number" id="mrrValue">—</div>
+          <div class="big-label">MRR</div>
+        </div>
+      </div>
+      <div id="channelBreakdown"></div>
+    </div>
+
+    <!-- DELIVERY STATUS -->
+    <div class="card">
+      <h2><span class="dot" id="deliveryDot"></span> Delivery Status</h2>
+      <div class="stat-row">
+        <span class="stat-label">Last delivery</span>
+        <span class="stat-value" id="lastDelivery">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Closures sent</span>
+        <span class="stat-value" id="closuresSent">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">B/C grades sent</span>
+        <span class="stat-value" id="scoresSent">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Subscribers reached</span>
+        <span class="stat-value" id="subsReached">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Next delivery</span>
+        <span class="stat-value" id="nextDelivery">—</span>
+      </div>
+    </div>
+
+    <!-- OUTREACH STATUS -->
+    <div class="card">
+      <h2><span class="dot dot-green"></span> Outreach</h2>
+      <div class="stat-row">
+        <span class="stat-label">Total leads</span>
+        <a href="buyer_leads.html" style="text-decoration:none;"><span class="stat-value" id="totalLeads" style="cursor:pointer;">—</span> <span style="color:#58a6ff;font-size:11px;">View all &rarr;</span></a>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Emails sent</span>
+        <span class="stat-value" id="emailsSent">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Opens</span>
+        <span class="stat-value" id="emailsOpened">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Responses</span>
+        <span class="stat-value" id="responses">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Signups</span>
+        <span class="stat-value green" id="signups">—</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-label">Conversion rate</span>
+        <span class="stat-value" id="conversionRate">—</span>
+      </div>
+    </div>
+
+    <!-- RECENT CLOSURES TABLE -->
+    <div class="card full-width">
+      <h2>Recent Closures (5 Most Recent)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Facility</th>
+            <th>City</th>
+            <th>Closed</th>
+            <th>Reason</th>
+            <th>Map</th>
+          </tr>
+        </thead>
+        <tbody id="closuresTable"></tbody>
+      </table>
+    </div>
+
+    <!-- SUBSCRIBER LIST -->
+    <div class="card full-width">
+      <h2>Subscriber List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Email</th>
+            <th>Plan</th>
+            <th>Channels</th>
+            <th>Signed Up</th>
+          </tr>
+        </thead>
+        <tbody id="subscriberTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+const BASE = './data';
+
+async function loadJSON(file) {
+  try {
+    const res = await fetch(`${BASE}/${file}?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`${file}: ${res.status}`);
+    return await res.json();
+  } catch (e) {
+    console.error(`Failed to load ${file}:`, e);
+    return null;
+  }
+}
+
+async function loadJSONL(file) {
+  try {
+    const res = await fetch(`${BASE}/${file}?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`${file}: ${res.status}`);
+    const text = await res.text();
+    const events = text.trim().split('\n').filter(Boolean).map(line => JSON.parse(line));
+    events.reverse();
+    return { events };
+  } catch (e) {
+    console.error(`Failed to load ${file}:`, e);
+    return null;
+  }
+}
+
+function timeAgo(dateStr) {
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const hours = Math.floor(diff / 3600000);
+  if (hours < 1) return 'Just now';
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  return `${days}d ago`;
+}
+
+function formatDate(dateStr) {
+  return new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function getNextDeliveryDay(schedule) {
+  const days = schedule?.days || ['Monday', 'Thursday'];
+  const dayMap = { Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6 };
+  const today = new Date();
+  const todayDay = today.getDay();
+  let minDiff = 8;
+  let nextDay = '';
+  for (const d of days) {
+    let diff = dayMap[d] - todayDay;
+    if (diff <= 0) diff += 7;
+    if (diff < minDiff) { minDiff = diff; nextDay = d; }
+  }
+  const next = new Date(today);
+  next.setDate(today.getDate() + minDiff);
+  return `${nextDay}, ${next.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+}
+
+function isStale(dateStr, maxHours) {
+  return (Date.now() - new Date(dateStr).getTime()) > maxHours * 3600000;
+}
+
+async function refresh() {
+  const [closures, lowScores, subscribers, outreach, deliveries, activity, buyerLeads] = await Promise.all([
+    loadJSON('closures.json'),
+    loadJSON('low_scores.json'),
+    loadJSON('subscribers.json'),
+    loadJSON('outreach.json'),
+    loadJSON('deliveries.json'),
+    loadJSONL('activity.jsonl'),
+    loadJSON('buyer_leads.json')
+  ]);
+
+  const alerts = [];
+
+  // Data Status
+  if (closures) {
+    const count = closures.closures.length;
+    document.getElementById('closureCount').textContent = count;
+    const dot = document.getElementById('dataStatusDot');
+    if (!closures.last_scrape) {
+      document.getElementById('lastScrape').textContent = 'Never';
+      document.getElementById('dataAge').textContent = 'No data';
+      dot.className = 'dot dot-red';
+      document.getElementById('dataAge').className = 'stat-value red';
+      alerts.push({ type: 'error', msg: 'No scrape data yet — run the scraper.' });
+    } else {
+      document.getElementById('lastScrape').textContent = formatDate(closures.last_scrape);
+      const age = timeAgo(closures.last_scrape);
+      document.getElementById('dataAge').textContent = age;
+      if (isStale(closures.last_scrape, 96)) {
+        dot.className = 'dot dot-red';
+        document.getElementById('dataAge').className = 'stat-value red';
+        alerts.push({ type: 'error', msg: `Data is ${age} old — time to scrape!` });
+      } else if (isStale(closures.last_scrape, 72)) {
+        dot.className = 'dot dot-yellow';
+        document.getElementById('dataAge').className = 'stat-value yellow';
+        alerts.push({ type: 'warning', msg: `Data is ${age} old — scrape soon.` });
+      } else {
+        dot.className = 'dot dot-green';
+        document.getElementById('dataAge').className = 'stat-value green';
+      }
+    }
+
+    // Recent closures table
+    const tbody = document.getElementById('closuresTable');
+    if (count === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" style="color:#8b949e;text-align:center;padding:16px;">No closure data yet. Run the scraper to populate.</td></tr>';
+    } else {
+      tbody.innerHTML = closures.closures.slice(0, 5).map(c => `
+        <tr>
+          <td>${c.facility_name}</td>
+          <td>${c.city}</td>
+          <td>${formatDate(c.closed_date)}</td>
+          <td>${c.reason}</td>
+          <td><a href="${c.google_maps_link}" target="_blank" style="color:#58a6ff;">View</a></td>
+        </tr>
+      `).join('');
+    }
+  }
+
+  if (lowScores) {
+    document.getElementById('lowScoreCount').textContent = lowScores.low_scores.length;
+  }
+
+  // Subscribers
+  if (subscribers) {
+    const subs = subscribers.subscribers.filter(s => s.status === 'active');
+    document.getElementById('subCount').textContent = subs.length;
+    const mrr = subs.reduce((sum, s) => sum + (s.plan === 'priority' ? 400 : 200), 0);
+    document.getElementById('mrrValue').textContent = `$${mrr}`;
+
+    // Channel breakdown
+    const channels = { email: 0, sms: 0, spreadsheet: 0, map: 0 };
+    subs.forEach(s => s.channels.forEach(ch => { if (channels[ch] !== undefined) channels[ch]++; }));
+    document.getElementById('channelBreakdown').innerHTML = Object.entries(channels).map(([ch, n]) =>
+      `<div class="stat-row"><span class="stat-label">${ch}</span><span class="stat-value">${n}</span></div>`
+    ).join('');
+
+    // Subscriber table
+    if (subs.length === 0) {
+      document.getElementById('subscriberTable').innerHTML = '<tr><td colspan="6" style="color:#8b949e;text-align:center;padding:16px;">No subscribers yet.</td></tr>';
+    } else {
+      document.getElementById('subscriberTable').innerHTML = subs.map(s => `
+        <tr>
+          <td>${s.name}</td>
+          <td>${s.company}</td>
+          <td>${s.email}</td>
+          <td><span class="badge badge-${s.plan}">${s.plan}</span></td>
+          <td><div class="subscriber-channels">${s.channels.map(ch => `<span class="badge badge-${ch}">${ch}</span>`).join('')}</div></td>
+          <td>${formatDate(s.signup_date)}</td>
+        </tr>
+      `).join('');
+    }
+  }
+
+  // Deliveries
+  if (deliveries) {
+    document.getElementById('nextDelivery').textContent = getNextDeliveryDay(deliveries.schedule);
+    const dot = document.getElementById('deliveryDot');
+    if (deliveries.deliveries.length === 0) {
+      document.getElementById('lastDelivery').textContent = 'Never';
+      document.getElementById('closuresSent').textContent = '0';
+      document.getElementById('scoresSent').textContent = '0';
+      document.getElementById('subsReached').textContent = '0';
+      dot.className = 'dot dot-yellow';
+    } else {
+      const last = deliveries.deliveries[0];
+      document.getElementById('lastDelivery').textContent = `${formatDate(last.date)} (${last.day})`;
+      document.getElementById('closuresSent').textContent = last.closures_sent;
+      document.getElementById('scoresSent').textContent = last.low_scores_sent;
+      document.getElementById('subsReached').textContent = last.subscribers_reached;
+      if (isStale(last.date, 96)) {
+        dot.className = 'dot dot-red';
+        alerts.push({ type: 'error', msg: `Last delivery was ${timeAgo(last.date)} — subscribers are overdue for an update!` });
+      } else if (isStale(last.date, 72)) {
+        dot.className = 'dot dot-yellow';
+      } else {
+        dot.className = 'dot dot-green';
+      }
+    }
+  }
+
+  // Outreach
+  if (outreach) {
+    document.getElementById('totalLeads').textContent = buyerLeads ? buyerLeads.leads.length : outreach.total_leads;
+    document.getElementById('emailsSent').textContent = outreach.emails_sent;
+    const openRate = outreach.emails_sent > 0 ? Math.round(outreach.emails_opened / outreach.emails_sent * 100) : 0;
+    document.getElementById('emailsOpened').textContent = outreach.emails_sent > 0 ? `${outreach.emails_opened} (${openRate}%)` : '0';
+    document.getElementById('responses').textContent = outreach.responses;
+    document.getElementById('signups').textContent = outreach.signups;
+    const convRate = outreach.emails_sent > 0 ? (outreach.signups / outreach.emails_sent * 100).toFixed(1) : '0.0';
+    document.getElementById('conversionRate').textContent = `${convRate}%`;
+  }
+
+  // Render alerts
+  const alertBox = document.getElementById('alerts');
+  if (alerts.length > 0) {
+    alertBox.innerHTML = alerts.map(a =>
+      `<div class="alert-box ${a.type === 'error' ? '' : a.type}">${a.msg}</div>`
+    ).join('');
+  } else {
+    alertBox.innerHTML = '<div class="alert-box ok">All systems nominal. Data is fresh, deliveries on schedule.</div>';
+  }
+
+  // Activity Log
+  const logEl = document.getElementById('activityLog');
+  if (activity && activity.events.length > 0) {
+    logEl.innerHTML = activity.events.slice(0, 20).map(e => `
+      <div class="activity-entry">
+        <span class="activity-time">${formatDate(e.timestamp)} ${new Date(e.timestamp).toLocaleTimeString()}</span>
+        <span class="activity-msg">${e.message}</span>
+      </div>
+    `).join('');
+  } else {
+    logEl.innerHTML = '<div class="activity-empty">No activity yet. Events will appear here as the scraper runs and deliveries are sent.</div>';
+  }
+
+  document.getElementById('lastRefresh').textContent = new Date().toLocaleTimeString();
+}
+
+refresh();
+setInterval(refresh, 60000);
+</script>
+</body>
+</html>

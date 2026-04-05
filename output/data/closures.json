@@ -1,0 +1,257 @@
+{
+  "last_scrape": "2026-04-04T09:00:00",
+  "closures": [
+    {
+      "facility_name": "FLYING CHOPSTIX",
+      "address": "174 E CARSON ST",
+      "city": "CARSON",
+      "closed_date": "2026-04-03",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health & Safety Code 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/FLYING%20CHOPSTIX%20174%20E%20CARSON%20ST%20CARSON%20CA"
+    },
+    {
+      "facility_name": "OLGUITAS COCINA",
+      "address": "4640 ROSEMEAD BLVD",
+      "city": "PICO RIVERA",
+      "closed_date": "2026-04-02",
+      "reopened_date": null,
+      "reason": "No closure reason provided",
+      "google_maps_link": "https://www.google.com/maps/search/OLGUITAS%20COCINA%204640%20ROSEMEAD%20BLVD%20PICO%20RIVERA%20CA"
+    },
+    {
+      "facility_name": "POLLY'S PIES",
+      "address": "1322 W BEVERLY BLVD",
+      "city": "MONTEBELLO",
+      "closed_date": "2026-03-26",
+      "reopened_date": null,
+      "reason": "Vermin infestation California Health & Safety Code section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/POLLY%27S%20PIES%201322%20W%20BEVERLY%20BLVD%20MONTEBELLO%20CA"
+    },
+    {
+      "facility_name": "CVS/PHARMACY #2289",
+      "address": "19701 W VANOWEN ST",
+      "city": "WINNETKA",
+      "closed_date": "2026-03-26",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/CVS/PHARMACY%20%232289%2019701%20W%20VANOWEN%20ST%20WINNETKA%20CA"
+    },
+    {
+      "facility_name": "SAMOSA HOUSE SANTA MONICA",
+      "address": "2301 MAIN ST",
+      "city": "SANTA MONICA",
+      "closed_date": "2026-03-24",
+      "reopened_date": null,
+      "reason": "Sewage Discharge - California Health and Safety Code Section 114190",
+      "google_maps_link": "https://www.google.com/maps/search/SAMOSA%20HOUSE%20SANTA%20MONICA%202301%20MAIN%20ST%20SANTA%20MONICA%20CA"
+    },
+    {
+      "facility_name": "COLDSTONE CREAMERY WEST LA",
+      "address": "10875 PICO BLVD",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-03-23",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/COLDSTONE%20CREAMERY%20WEST%20LA%2010875%20PICO%20BLVD%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "BAOSHUTANG RESTAURANT",
+      "address": "987 S GLENDORA AVE 5",
+      "city": "WEST COVINA",
+      "closed_date": "2026-03-23",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/BAOSHUTANG%20RESTAURANT%20987%20S%20GLENDORA%20AVE%205%20WEST%20COVINA%20CA"
+    },
+    {
+      "facility_name": "KOREAN BBQ HOUSE",
+      "address": "123 S ONIZUKA ST # 302",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-03-20",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/KOREAN%20BBQ%20HOUSE%20123%20S%20ONIZUKA%20ST%20%23%20302%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "LA RAMADA RESTAURANT",
+      "address": "6330 SANTA FE AVE",
+      "city": "HUNTINGTON PARK",
+      "closed_date": "2026-03-20",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/LA%20RAMADA%20RESTAURANT%206330%20SANTA%20FE%20AVE%20HUNTINGTON%20PARK%20CA"
+    },
+    {
+      "facility_name": "PARADISE BIRYANI POINTE",
+      "address": "18158 PIONEER BLVD",
+      "city": "ARTESIA",
+      "closed_date": "2026-03-19",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/PARADISE%20BIRYANI%20POINTE%2018158%20PIONEER%20BLVD%20ARTESIA%20CA"
+    },
+    {
+      "facility_name": "TACOS Y BURRITOS METRO B #1",
+      "address": "1118 N HACIENDA BLVD",
+      "city": "LA PUENTE",
+      "closed_date": "2026-03-19",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/TACOS%20Y%20BURRITOS%20METRO%20B%20%231%201118%20N%20HACIENDA%20BLVD%20LA%20PUENTE%20CA"
+    },
+    {
+      "facility_name": "RICK'S BURGER",
+      "address": "132 W MAIN ST",
+      "city": "ALHAMBRA",
+      "closed_date": "2026-03-17",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/RICK%27S%20BURGER%20132%20W%20MAIN%20ST%20ALHAMBRA%20CA"
+    },
+    {
+      "facility_name": "A&S LIQUOR MARKET",
+      "address": "3088 W PICO BLVD",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-03-17",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/A%26S%20LIQUOR%20MARKET%203088%20W%20PICO%20BLVD%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "NADC BURGER",
+      "address": "1091 BROXTON",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-03-11",
+      "reopened_date": null,
+      "reason": "No Plans Submitted California Health and Safety Code Section 114380",
+      "google_maps_link": "https://www.google.com/maps/search/NADC%20BURGER%201091%20BROXTON%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "BLACKCRAFT COFFEE",
+      "address": "457 N FAIRFAX AVE",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-03-05",
+      "reopened_date": null,
+      "reason": "Sewage Discharge - California Health and Safety Code Section 114190  No Method to Clean and Sanitize Available  California Health and Safety Code Section 114095",
+      "google_maps_link": "https://www.google.com/maps/search/BLACKCRAFT%20COFFEE%20457%20N%20FAIRFAX%20AVE%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "SPITZ EAGLE ROCK",
+      "address": "2506 COLORADO BLVD",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-02-26",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/SPITZ%20EAGLE%20ROCK%202506%20COLORADO%20BLVD%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "MEXICAN RIVIERA RESTAURANT",
+      "address": "4239 PACIFIC COAST HWY",
+      "city": "TORRANCE",
+      "closed_date": "2026-02-23",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/MEXICAN%20RIVIERA%20RESTAURANT%204239%20PACIFIC%20COAST%20HWY%20TORRANCE%20CA"
+    },
+    {
+      "facility_name": "TED'S PLACE",
+      "address": "23401 S NORMANDIE AVE",
+      "city": "HARBOR CITY",
+      "closed_date": "2026-02-18",
+      "reopened_date": null,
+      "reason": "VERMIN INFESTATION - CALIFORNIA HEALTH AND SAFETY CODE SECTION 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/TED%27S%20PLACE%2023401%20S%20NORMANDIE%20AVE%20HARBOR%20CITY%20CA"
+    },
+    {
+      "facility_name": "PAULS KITCHEN",
+      "address": "1012 S SAN PEDRO ST",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-02-13",
+      "reopened_date": null,
+      "reason": "Vermin Infestation California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/PAULS%20KITCHEN%201012%20S%20SAN%20PEDRO%20ST%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "LAB88",
+      "address": "10602 LOWER AZUSA RD",
+      "city": "EL MONTE",
+      "closed_date": "2026-02-12",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/LAB88%2010602%20LOWER%20AZUSA%20RD%20EL%20MONTE%20CA"
+    },
+    {
+      "facility_name": "FU YI RETAIL STORE",
+      "address": "127 S GARFIELD AVE STE #A",
+      "city": "MONTEREY PARK",
+      "closed_date": "2026-02-03",
+      "reopened_date": null,
+      "reason": "Vermin Infestation California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/FU%20YI%20RETAIL%20STORE%20127%20S%20GARFIELD%20AVE%20STE%20%23A%20MONTEREY%20PARK%20CA"
+    },
+    {
+      "facility_name": "FACTORY TEA BAR",
+      "address": "323 S MISSION DR",
+      "city": "SAN GABRIEL",
+      "closed_date": "2026-01-30",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/FACTORY%20TEA%20BAR%20323%20S%20MISSION%20DR%20SAN%20GABRIEL%20CA"
+    },
+    {
+      "facility_name": "UNIVERSAL GROCERY AND DELI",
+      "address": "5021 W SANTA MONICA BLVD",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-01-30",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/UNIVERSAL%20GROCERY%20AND%20DELI%205021%20W%20SANTA%20MONICA%20BLVD%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "DAN'S MINI MART",
+      "address": "11100 S VERMONT AVE BLDG 1",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-01-29",
+      "reopened_date": null,
+      "reason": "Vermin Infestation-California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/DAN%27S%20MINI%20MART%2011100%20S%20VERMONT%20AVE%20BLDG%201%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "COMMERCE TRUCK STOP",
+      "address": "4560 E WASHINGTON BLVD",
+      "city": "COMMERCE",
+      "closed_date": "2026-01-29",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/COMMERCE%20TRUCK%20STOP%204560%20E%20WASHINGTON%20BLVD%20COMMERCE%20CA"
+    },
+    {
+      "facility_name": "MEIZHOU DONGPO",
+      "address": "10250 SANTA MONICA BLVD #200A",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-01-28",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/MEIZHOU%20DONGPO%2010250%20SANTA%20MONICA%20BLVD%20%23200A%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "TAN-CHA",
+      "address": "3407 W 6TH ST UNIT 101B",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-01-20",
+      "reopened_date": null,
+      "reason": "No Method to Clean and Sanitize Available  California Health and Safety Code Section 114095",
+      "google_maps_link": "https://www.google.com/maps/search/TAN-CHA%203407%20W%206TH%20ST%20UNIT%20101B%20LOS%20ANGELES%20CA"
+    },
+    {
+      "facility_name": "A TODA MADRE BRUNCH",
+      "address": "4809 MELROSE AVE",
+      "city": "LOS ANGELES",
+      "closed_date": "2026-01-07",
+      "reopened_date": null,
+      "reason": "Vermin Infestation - California Health and Safety Code Section 114259.1",
+      "google_maps_link": "https://www.google.com/maps/search/A%20TODA%20MADRE%20BRUNCH%204809%20MELROSE%20AVE%20LOS%20ANGELES%20CA"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buyer Leads — HealthyLA</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+    background: #0d1117;
+    color: #c9d1d9;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #21262d;
+    margin-bottom: 16px;
+  }
+  header h1 { font-size: 18px; color: #f0f6fc; }
+  .meta { font-size: 12px; color: #8b949e; }
+  .meta a { color: #58a6ff; text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+  .summary {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 8px;
+  }
+  .summary-stat .num { font-size: 28px; font-weight: 700; color: #f0f6fc; }
+  .summary-stat .label { font-size: 12px; color: #8b949e; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th {
+    text-align: left; color: #8b949e; font-weight: 500;
+    padding: 8px 10px; border-bottom: 2px solid #21262d;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
+    position: sticky; top: 0; background: #0d1117; cursor: pointer;
+    user-select: none;
+  }
+  th:hover { color: #c9d1d9; }
+  th .sort-arrow { font-size: 10px; margin-left: 4px; }
+  td { padding: 8px 10px; border-bottom: 1px solid #21262d; }
+  tr:hover td { background: #161b22; }
+  .link { color: #58a6ff; text-decoration: none; white-space: nowrap; }
+  .link:hover { text-decoration: underline; }
+  .badge-high {
+    display: inline-block; padding: 2px 8px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; background: #f8514933; color: #f85149;
+  }
+  .badge-normal {
+    display: inline-block; padding: 2px 8px; border-radius: 12px;
+    font-size: 11px; font-weight: 600; background: #21262d; color: #8b949e;
+  }
+  .specialty { max-width: 280px; font-size: 12px; color: #8b949e; }
+  .empty { text-align: center; padding: 40px; color: #8b949e; }
+  .contact-info { font-size: 12px; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Buyer Leads</h1>
+    <div class="meta">
+      <a href="dashboard.html">&larr; Dashboard</a>
+    </div>
+  </header>
+  <div class="summary">
+    <div class="summary-stat">
+      <div class="num" id="totalCount">—</div>
+      <div class="label">Total Leads</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num" id="highCount">—</div>
+      <div class="label">High Priority</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num" id="withEmail">—</div>
+      <div class="label">Have Email</div>
+    </div>
+    <div class="summary-stat">
+      <div class="num" id="withContact">—</div>
+      <div class="label">Have Contact Name</div>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th data-col="company_name">Company <span class="sort-arrow"></span></th>
+        <th data-col="contact_name">Contact <span class="sort-arrow"></span></th>
+        <th data-col="phone">Phone <span class="sort-arrow"></span></th>
+        <th data-col="email">Email <span class="sort-arrow"></span></th>
+        <th data-col="specialty">Specialty <span class="sort-arrow"></span></th>
+        <th data-col="priority">Priority <span class="sort-arrow"></span></th>
+        <th>Site</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+<script>
+const BASE = './data';
+let leads = [];
+let sortCol = 'priority';
+let sortAsc = false;
+
+async function load() {
+  try {
+    const res = await fetch(`${BASE}/buyer_leads.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    leads = data.leads || [];
+    document.getElementById('totalCount').textContent = leads.length;
+    document.getElementById('highCount').textContent = leads.filter(l => l.priority === 'HIGH').length;
+    document.getElementById('withEmail').textContent = leads.filter(l => l.email).length;
+    document.getElementById('withContact').textContent = leads.filter(l => l.contact_name).length;
+    render();
+  } catch (e) {
+    document.getElementById('tableBody').innerHTML =
+      '<tr><td colspan="7" class="empty">Failed to load leads data. Make sure the local server is running.</td></tr>';
+  }
+}
+
+function render() {
+  const sorted = [...leads].sort((a, b) => {
+    let va = a[sortCol] || '', vb = b[sortCol] || '';
+    // Sort HIGH priority first when descending
+    if (sortCol === 'priority') {
+      va = va === 'HIGH' ? 1 : 0;
+      vb = vb === 'HIGH' ? 1 : 0;
+    } else {
+      va = va.toString().toLowerCase();
+      vb = vb.toString().toLowerCase();
+    }
+    if (va < vb) return sortAsc ? -1 : 1;
+    if (va > vb) return sortAsc ? 1 : -1;
+    return 0;
+  });
+
+  if (sorted.length === 0) {
+    document.getElementById('tableBody').innerHTML =
+      '<tr><td colspan="7" class="empty">No leads yet.</td></tr>';
+    return;
+  }
+
+  document.getElementById('tableBody').innerHTML = sorted.map(l => `
+    <tr>
+      <td><strong>${esc(l.company_name)}</strong></td>
+      <td class="contact-info">${esc(l.contact_name) || '—'}</td>
+      <td class="contact-info">${l.phone ? `<a class="link" href="tel:${esc(l.phone)}">${esc(l.phone)}</a>` : '—'}</td>
+      <td class="contact-info">${l.email ? `<a class="link" href="mailto:${esc(l.email)}">${esc(l.email)}</a>` : '—'}</td>
+      <td class="specialty">${esc(l.specialty)}</td>
+      <td>${l.priority === 'HIGH' ? '<span class="badge-high">HIGH</span>' : '<span class="badge-normal">—</span>'}</td>
+      <td>${l.website ? `<a class="link" href="${esc(l.website)}" target="_blank">Site</a>` : '—'}</td>
+    </tr>
+  `).join('');
+
+  document.querySelectorAll('th[data-col]').forEach(th => {
+    const arrow = th.querySelector('.sort-arrow');
+    arrow.textContent = th.dataset.col === sortCol ? (sortAsc ? '\u25B2' : '\u25BC') : '';
+  });
+}
+
+function esc(s) {
+  const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML;
+}
+
+document.querySelectorAll('th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) sortAsc = !sortAsc;
+    else { sortCol = col; sortAsc = true; }
+    render();
+  });
+});
+
+load();
+</script>
+</body>
+</html>

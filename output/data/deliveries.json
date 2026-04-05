@@ -1,0 +1,7 @@
+{
+  "deliveries": [],
+  "schedule": {
+    "days": ["Monday", "Thursday"],
+    "time": "7:00 AM PT"
+  }
+}

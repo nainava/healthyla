@@ -1,0 +1,904 @@
+{
+  "leads": [
+    {
+      "company_name": "The PEST Group",
+      "contact_name": "",
+      "phone": "(888) 298-0465",
+      "email": "",
+      "website": "https://www.thepestgroup.com/",
+      "specialty": "Commercial & residential pest control - Southern California",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Pest Innovations Inc",
+      "contact_name": "",
+      "phone": "(626) 335-4441",
+      "email": "",
+      "website": "https://www.pestinnovations.com/",
+      "specialty": "Eco-friendly commercial pest control - LA/OC/IE - 25+ years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Versa-Tech Pest Management",
+      "contact_name": "Jason Baacke",
+      "phone": "(888) 429-1213",
+      "email": "",
+      "website": "https://versatechpm.com/",
+      "specialty": "Forensic pest control & rodent management - San Gabriel Valley",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Guarantee Pest Control",
+      "contact_name": "",
+      "phone": "(800) 507-3787",
+      "email": "guaranteepestcon@sbcglobal.net",
+      "website": "https://guaranteepestcontrol.net/",
+      "specialty": "Commercial/industrial/residential since 1958 - family owned",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "The Bugman",
+      "contact_name": "",
+      "phone": "(714) 992-1292",
+      "email": "",
+      "website": "https://www.thebugman.com/",
+      "specialty": "Commercial & residential - family owned 68 years - 7 SoCal counties",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Eastern Termite & Pest Control",
+      "contact_name": "",
+      "phone": "(323) 373-9992",
+      "email": "pest@easterncontrol.com",
+      "website": "https://easterncontrol.com/",
+      "specialty": "Pest control bed bugs termites mold - LA/OC/Riverside/SB",
+      "priority": ""
+    },
+    {
+      "company_name": "CURA Termite & Pest Control",
+      "contact_name": "",
+      "phone": "(949) 272-8643",
+      "email": "",
+      "website": "https://www.curapest.com/",
+      "specialty": "Commercial pest control - OC/LA/Inland Empire - 55 years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Aloha Commercial Pest Services",
+      "contact_name": "",
+      "phone": "(323) 263-7359",
+      "email": "info@alohabugs.com",
+      "website": "http://alohabugs.com/",
+      "specialty": "Commercial pest control specializing in restaurant accounts",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "A Step Above Pest Control",
+      "contact_name": "",
+      "phone": "(323) 716-1725",
+      "email": "",
+      "website": "https://www.astepabovepestcontrol.com/",
+      "specialty": "Commercial & residential - 30+ years - LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Gorilla Pest Control",
+      "contact_name": "George Castillo",
+      "phone": "(888) 777-1810",
+      "email": "",
+      "website": "http://gorillapestcontrol.com/",
+      "specialty": "Commercial residential industrial - LA/OC/SB/Riverside/Ventura",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "360 Rodent Control",
+      "contact_name": "",
+      "phone": "(866) 855-5065",
+      "email": "360rodentontrol@gmail.com",
+      "website": "https://360rodentcontrol.com/",
+      "specialty": "Eco-friendly rodent control - family owned - commercial",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Five Star Pest Control",
+      "contact_name": "",
+      "phone": "(808) 345-7898",
+      "email": "hlontoc@fivestarpestcontrol.biz",
+      "website": "https://www.excellencepestcontrol.com/",
+      "specialty": "Pest control - LA - Atwater Village",
+      "priority": ""
+    },
+    {
+      "company_name": "Green Termite & Pest Control",
+      "contact_name": "",
+      "phone": "(213) 387-1085",
+      "email": "",
+      "website": "http://www.greentermite.com/",
+      "specialty": "Termite & pest control commercial & residential - LA/OC",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Coleman's Pest Control",
+      "contact_name": "Coleman Hart",
+      "phone": "(323) 731-8771",
+      "email": "",
+      "website": "https://www.bbb.org/us/ca/los-angeles/profile/pest-control/colemans-pest-control-1216-15576",
+      "specialty": "Pest control fumigation termites - 58 years - family owned",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Rodent Control Inc",
+      "contact_name": "",
+      "phone": "(833) 376-3368",
+      "email": "",
+      "website": "https://rodentcontrolinc.com/",
+      "specialty": "Rodent control - commercial & residential - since 1999 - A+ BBB",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Excellence Pest Control",
+      "contact_name": "",
+      "phone": "(877) 606-2847",
+      "email": "excellence.pestcontrol@yahoo.com",
+      "website": "https://www.excellencepestcontrol.com/",
+      "specialty": "Commercial industrial residential pest control - 18 years - family owned",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Hearts Pest Management",
+      "contact_name": "",
+      "phone": "(800) 986-1006",
+      "email": "Support@heartspm.com",
+      "website": "https://www.heartspm.com/",
+      "specialty": "Commercial pest control restaurants hotels - eco-friendly - 30+ years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "EcoGuard Pest Management",
+      "contact_name": "",
+      "phone": "(866) 326-2847",
+      "email": "",
+      "website": "https://www.ecoguardpestmanagement.com/",
+      "specialty": "Commercial pest control restaurants warehouses - LA County",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "American Rat Control",
+      "contact_name": "Louis Rico",
+      "phone": "(310) 397-8275",
+      "email": "",
+      "website": "https://americanratcontrol.com/",
+      "specialty": "Rodent control for restaurants apartments commercial - 40+ years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Rodents Stop",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://rodentsstop.com/",
+      "specialty": "Rodent control - poison-free - family owned - lifetime guarantee",
+      "priority": ""
+    },
+    {
+      "company_name": "Pest Solutions SoCal",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.pestsolutionssocal.com/",
+      "specialty": "Pest control - LA & Orange County - since 2002",
+      "priority": ""
+    },
+    {
+      "company_name": "Advanced IPM",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://advancedipm.com/",
+      "specialty": "Commercial & residential pest control since 1981 - CA & NV",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Safe Kitchens",
+      "contact_name": "",
+      "phone": "(833) 472-3548",
+      "email": "info@safekitchens.com",
+      "website": "https://safekitchens.com/",
+      "specialty": "Commercial kitchen deep cleaning & sanitation - 25+ years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Established Janitorial",
+      "contact_name": "",
+      "phone": "(310) 619-5544",
+      "email": "info@establishedjanitorial.com",
+      "website": "https://www.establishedjanitorial.com/",
+      "specialty": "Restaurant & bar cleaning - kitchen deep cleaning - LA/OC - 15 years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Euclid Cleaning Services",
+      "contact_name": "",
+      "phone": "(949) 867-8422",
+      "email": "info@euclidcleaning.com",
+      "website": "https://euclidcleaning.com/",
+      "specialty": "Restaurant cleaning - kitchen deep cleaning - Los Angeles",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Top To Bottom Deep Cleaning",
+      "contact_name": "Bryan",
+      "phone": "(323) 608-9022",
+      "email": "toptobottom0491@gmail.com",
+      "website": "https://toptobottomdeepcleaning.com/",
+      "specialty": "Hood cleaning commercial kitchen - San Fernando Valley/LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "The Grease Company",
+      "contact_name": "",
+      "phone": "(888) 697-8910",
+      "email": "info@thegreasecompany.com",
+      "website": "https://thegreasecompany.com/",
+      "specialty": "Grease trap cleaning used cooking oil hydro-jetting - all SoCal",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "LA Hood Cleaning",
+      "contact_name": "",
+      "phone": "(818) 423-5505",
+      "email": "office@lahoodcleaning.com",
+      "website": "https://lahoodcleaning.com/",
+      "specialty": "Hood & exhaust cleaning fire safety compliance - Greater LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Grand Natural Inc",
+      "contact_name": "",
+      "phone": "(855) 519-5550",
+      "email": "info@grandnaturalinc.com",
+      "website": "https://www.grandnaturalinc.com/",
+      "specialty": "Kitchen grease trap hood cleaning pest control - 49 states",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "DNR Commercial Kitchen Cleaning",
+      "contact_name": "Mike",
+      "phone": "(661) 400-7977",
+      "email": "Mikewithdnr@gmail.com",
+      "website": "https://dnrcommercialkitchencleaning.com/",
+      "specialty": "Commercial kitchen degreasing deep cleaning - LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "CE Kitchen Cleaning",
+      "contact_name": "",
+      "phone": "(323) 515-9552",
+      "email": "cekitchencleaning@gmail.com",
+      "website": "https://www.steamcleaning.us/",
+      "specialty": "Commercial kitchen deep steam cleaning - Culver City/LA - 12 years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Master Cleaner Corporation",
+      "contact_name": "",
+      "phone": "(844) 622-6777",
+      "email": "",
+      "website": "http://masterclnr.com/",
+      "specialty": "Hood cleaning exhaust kitchen deep cleaning - restaurants hotels",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "LC Cleaning Inc",
+      "contact_name": "",
+      "phone": "Luis",
+      "email": "Luis@LCCleanings.Com",
+      "website": "https://www.lccleanings.com/",
+      "specialty": "Restaurant cleaning - OC and LA areas",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Executive Cleaning Services",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://executive-clean.com/",
+      "specialty": "Restaurant kitchen cleaning - family owned - 43 years - LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Enviro-Master (South LA)",
+      "contact_name": "",
+      "phone": "(310) 362-9133",
+      "email": "",
+      "website": "https://california.enviro-master.com/",
+      "specialty": "Restaurant cleaning commercial kitchen sanitation - South LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Enviro-Master (North LA)",
+      "contact_name": "",
+      "phone": "(310) 362-6724",
+      "email": "",
+      "website": "https://california.enviro-master.com/",
+      "specialty": "Restaurant cleaning commercial kitchen sanitation - North LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Imagine It Clean",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://imagineitclean.com/",
+      "specialty": "Commercial janitorial restaurant kitchen cleaning - LA County",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Lloyd Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.lloydpest.com/",
+      "specialty": "Restaurant pest control - LA County - licensed bonded insured",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Hydrex Pest Control",
+      "contact_name": "",
+      "phone": "(818) 248-5186",
+      "email": "",
+      "website": "https://www.hydrexglendale.com/",
+      "specialty": "Commercial & residential - Glendale/Burbank/Pasadena - 70+ years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Glendale Pest Pros",
+      "contact_name": "",
+      "phone": "(818) 306-1952",
+      "email": "",
+      "website": "https://glendalepestpros.com/",
+      "specialty": "Commercial pest control restaurants - Glendale/Burbank area",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Pacific Exterminator",
+      "contact_name": "",
+      "phone": "(800) 611-0127",
+      "email": "",
+      "website": "https://pacificexterminators.com/",
+      "specialty": "Pest control - locally owned - Glendale/Pasadena/Burbank",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Brooks Pest Control",
+      "contact_name": "",
+      "phone": "(562) 239-4235",
+      "email": "",
+      "website": "https://www.brookspest.com/",
+      "specialty": "Pest control - Glendale/Burbank/South Pasadena/LA",
+      "priority": ""
+    },
+    {
+      "company_name": "Rousselle Exterminators",
+      "contact_name": "",
+      "phone": "(562) 692-0481",
+      "email": "info@rousselletermite.com",
+      "website": "https://www.rousselletermite.com/",
+      "specialty": "Termite & pest control - Whittier/Montebello/Downey - since 1957",
+      "priority": ""
+    },
+    {
+      "company_name": "Active Termite & Pest Control",
+      "contact_name": "",
+      "phone": "(877) 577-3787",
+      "email": "AlwaysActive@activepestctrl.com",
+      "website": "https://www.activepestctrl.com/",
+      "specialty": "Commercial pest & termite - Bellflower/LA/OC - since 2006",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "West Covina Pest Control",
+      "contact_name": "",
+      "phone": "(626) 784-6650",
+      "email": "info@westcovinapestcontrol.com",
+      "website": "https://westcovinapestcontrol.com/",
+      "specialty": "Commercial pest control - West Covina/SGV - eco-friendly",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "UnBugMe Pest Control",
+      "contact_name": "",
+      "phone": "(818) 510-0629",
+      "email": "Unbugme@unbugmepestcontrol.com",
+      "website": "https://www.unbugmepestcontrol.com/",
+      "specialty": "Commercial & residential - Van Nuys/SFV - same day service",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Cleargate Pest Defense",
+      "contact_name": "Jason",
+      "phone": "(833) 773-7833",
+      "email": "jason@cleargatepest.com",
+      "website": "https://cleargatepest.com/",
+      "specialty": "Pest control - Canoga Park/LA - residential & commercial",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "A1 Termite & Pest Control",
+      "contact_name": "",
+      "phone": "(213) 388-4506",
+      "email": "a1termiteandpest@yahoo.com",
+      "website": "https://www.losangelestermiteinspections.com/",
+      "specialty": "Termite & pest - commercial & residential - LA/OC",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Southern California Exterminators",
+      "contact_name": "",
+      "phone": "(800) 418-9263",
+      "email": "",
+      "website": "https://southerncaliforniaexterminators.com/",
+      "specialty": "Restaurants & commercial contracts - OC/South LA County",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Restoration Pest Control",
+      "contact_name": "",
+      "phone": "(818) 533-8571",
+      "email": "",
+      "website": "https://www.yelp.com/biz/restoration-pest-control-panorama-city-4",
+      "specialty": "Pest control - Panorama City/SFV - affordable",
+      "priority": ""
+    },
+    {
+      "company_name": "Stanley Pest Control",
+      "contact_name": "",
+      "phone": "(800) 566-2505",
+      "email": "",
+      "website": "https://www.stanleypest.com/",
+      "specialty": "Restaurant food service pest control - Long Beach/LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Pest Solutions SoCal (updated)",
+      "contact_name": "",
+      "phone": "(800) 681-5141",
+      "email": "",
+      "website": "https://www.pestsolutionssocal.com/",
+      "specialty": "Commercial pest control hotels restaurants - LA/OC - since 2002",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "HomeShield Pest Control",
+      "contact_name": "",
+      "phone": "(714) 702-1058",
+      "email": "",
+      "website": "https://www.homeshieldpestcontrol.com/",
+      "specialty": "Commercial pest control - LA County - eco-friendly affordable",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Top Tier Hood Cleaning",
+      "contact_name": "",
+      "phone": "(323) 391-5100",
+      "email": "info@toptierhoodcleaningservices.com",
+      "website": "https://toptierhoodcleaningservices.com/",
+      "specialty": "Hood cleaning exhaust cleaning - LA County/OC",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Bryan Exhaust Service",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://bryanexhaust.com/",
+      "specialty": "Kitchen exhaust cleaning - veteran owned - LA/OC/SD/SB/Riverside",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "GreaseAway",
+      "contact_name": "",
+      "phone": "(844) 234-2929",
+      "email": "",
+      "website": "https://www.greaseaway.com/",
+      "specialty": "Kitchen exhaust hood duct cleaning - OC/LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Octo Pro Wash",
+      "contact_name": "",
+      "phone": "(844) 492-7422",
+      "email": "",
+      "website": "https://octoprowash.com/",
+      "specialty": "Commercial hood cleaning - Los Angeles",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "M&E Best Fire Protection",
+      "contact_name": "",
+      "phone": "(888) 702-3473",
+      "email": "",
+      "website": "https://www.mebestfireprotection.com/",
+      "specialty": "Hood fire suppression cleaning - LA restaurants",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "SoCal Hoods",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://socalhoods.com/",
+      "specialty": "Food truck cleaning & commercial hood service - Southern CA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Action Duct Cleaning",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://actionduct.com/",
+      "specialty": "Restaurant & residential kitchen cleaning - LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "JR Janitorial Service",
+      "contact_name": "",
+      "phone": "(818) 404-0113",
+      "email": "",
+      "website": "https://jrjanitorialservice.com/",
+      "specialty": "Janitorial restaurant cleaning - Glendale/Pasadena/LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Janitorial Cleaning LA",
+      "contact_name": "",
+      "phone": "(818) 396-3369",
+      "email": "",
+      "website": "https://jc-la.com/",
+      "specialty": "Commercial janitorial nightly maintenance - LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "The Elite Maids",
+      "contact_name": "",
+      "phone": "(323) 985-2626",
+      "email": "",
+      "website": "https://www.theelitemaids.com/",
+      "specialty": "Commercial kitchen cleaning - Pasadena/Glendale/LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Dewey Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://deweypest.com/",
+      "specialty": "Food service pest control restaurants - SoCal wide",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Ronin Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://roninpestcontrol.com/",
+      "specialty": "Rodent control - family owned - LA - commercial",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Scheib Pest Solutions",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "specialty": "",
+      "priority": "FAMILY OWNED PEST CONTROL - 20+ YEARS - RESTAURANTS HOTELS"
+    },
+    {
+      "company_name": "Corky's Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.corkypest.com/",
+      "specialty": "Pest control - Pomona/West Covina/Alhambra/SoCal",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "La Mirada Pest Pros",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://lamiradapestpros.com/",
+      "specialty": "Pest control - Norwalk/Downey/Whittier area",
+      "priority": ""
+    },
+    {
+      "company_name": "Beach City Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "hello@beachcitypestcontrol.com",
+      "website": "https://beachcitypestcontrol.com/",
+      "specialty": "Eco-friendly pest control - Santa Monica/Venice/Culver City - commercial",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Fenn Termite & Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.fennpest.com/",
+      "specialty": "Commercial pest control - Santa Monica - family owned 70+ years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Annihilate Those Bugs",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://annihilatethosebugs.com/",
+      "specialty": "Pest & bed bug exterminator - LA - commercial",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "EagleShield Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://eagleshieldpc.com/",
+      "specialty": "Pest control - LA County - commercial",
+      "priority": ""
+    },
+    {
+      "company_name": "Monterey Park Pest Pros",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://montereyparkpestpros.com/",
+      "specialty": "Pest control - Monterey Park/San Gabriel - same day service",
+      "priority": ""
+    },
+    {
+      "company_name": "1st Response Pest Control",
+      "contact_name": "",
+      "phone": "(661) 236-5534",
+      "email": "",
+      "website": "https://1stresponsepc.com/",
+      "specialty": "Commercial & residential pest control - Palmdale/Lancaster/SCV",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Bug Patrol Inc",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://bugpatrol.net/",
+      "specialty": "Commercial pest control - Antelope Valley - 30+ years locally owned",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Sharp Pest Management",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://sharppestmanagement.com/",
+      "specialty": "Green pest control - Palmdale/Lancaster/SCV",
+      "priority": ""
+    },
+    {
+      "company_name": "Classic Exterminator Co.",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://palmdalepestexterminator.com/",
+      "specialty": "Pest control - SCV/Antelope Valley - family owned",
+      "priority": ""
+    },
+    {
+      "company_name": "Hydrex Pest Control (SCV)",
+      "contact_name": "",
+      "phone": "(661) 945-4575",
+      "email": "",
+      "website": "https://hydrexbugs.com/",
+      "specialty": "Pest & termite - Palmdale/Lancaster/SCV - family run since 1970",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Excel Pest Management",
+      "contact_name": "",
+      "phone": "(888) 694-3707",
+      "email": "",
+      "website": "https://www.excelpestmgt.com/",
+      "specialty": "Commercial pest control - Santa Clarita - 30 years experience",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Grease Management Solutions",
+      "contact_name": "",
+      "phone": "(888) 696-9906",
+      "email": "",
+      "website": "https://greasemanagement.org/",
+      "specialty": "Grease trap hood cleaning hydro jetting - all SoCal counties",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Optimal Biofuels / Facility Pros",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.optimalbiofuels.com/",
+      "specialty": "Grease trap cleaning restaurant - LA/OC - eco-friendly",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Los Angeles Grease Trap",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://losangelesgrease.com/",
+      "specialty": "Grease trap cleaning used cooking oil - LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Office Cleaning Long Beach",
+      "contact_name": "",
+      "phone": "(562) 270-4806",
+      "email": "",
+      "website": "https://www.officecleaninglongbeach.com/",
+      "specialty": "Restaurant cleaning janitorial - Long Beach",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Janitor Pro Clean",
+      "contact_name": "",
+      "phone": "(310) 906-9097",
+      "email": "",
+      "website": "https://janitorproclean.com/",
+      "specialty": "Restaurant kitchen cleaning janitorial - Torrance",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Hot Shot Commercial Services",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://hotshot-windowcleaning.com/",
+      "specialty": "Restaurant cleaning - Long Beach - 21+ years",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "SoCal Cleaners",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://socalcleaner.com/",
+      "specialty": "Restaurant kitchen deep cleaning - Long Beach/South Bay",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "InterKleen",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.interkleen.com/",
+      "specialty": "Commercial kitchen cleaning service - LA",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "BlueAnt Inc",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://blueantinc.com/",
+      "specialty": "Commercial cleaning restaurant - Los Angeles",
+      "priority": ""
+    },
+    {
+      "company_name": "Atlas Janitorial Agency",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://atlas-janitorial.com/",
+      "specialty": "Commercial cleaning restaurant - LA/Glendale",
+      "priority": ""
+    },
+    {
+      "company_name": "Royalty Commercial Cleaning",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://royaltyccca.com/",
+      "specialty": "Commercial cleaning - Santa Monica/Culver City/Pasadena",
+      "priority": ""
+    },
+    {
+      "company_name": "JR Grease Services",
+      "contact_name": "",
+      "phone": "(888) 800-0118",
+      "email": "",
+      "website": "https://www.greaseservices.com/",
+      "specialty": "Grease trap cleaning plumbing - LA restaurants",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Elimitech Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.elimitechpest.com/",
+      "specialty": "Commercial pest control - West Covina/Baldwin Park/El Monte",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Baldwin Park Pest Pros",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://baldwinparkpestpros.com/",
+      "specialty": "Pest control - Baldwin Park/West Covina/El Monte - same day",
+      "priority": ""
+    },
+    {
+      "company_name": "A.B.L.A. Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.ablapestcontrol.com/",
+      "specialty": "Pest control - Echo Park/Silver Lake/Hollywood - LA",
+      "priority": ""
+    },
+    {
+      "company_name": "Poway Pest Control",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.poway-pest-control.com/",
+      "specialty": "Pest control - Baldwin Park/SGV area",
+      "priority": ""
+    },
+    {
+      "company_name": "West Covina Termite",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://westcovinatermite.com/",
+      "specialty": "Termite & pest control - West Covina/Baldwin Park - local",
+      "priority": ""
+    },
+    {
+      "company_name": "EcoShield Pest Solutions",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.ecoshieldpest.com/",
+      "specialty": "Commercial pest control - Canoga Park/LA County",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Aptive Environmental",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://aptivepestcontrol.com/",
+      "specialty": "Commercial pest control - Van Nuys/Hawthorne/LA - eco friendly",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "PURCOR Pest Solutions",
+      "contact_name": "",
+      "phone": "",
+      "email": "",
+      "website": "https://www.purcorpest.com/",
+      "specialty": "Commercial pest control - West Covina/LA - professional kitchens",
+      "priority": "HIGH"
+    },
+    {
+      "company_name": "Annihilate Pest Control",
+      "contact_name": "",
+      "phone": "(323) 350-2100",
+      "email": "",
+      "website": "https://annihilatethosebugs.com/",
+      "specialty": "Pest & bed bug exterminator - LA - commercial & residential",
+      "priority": "HIGH"
+    }
+  ]
+}
