@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>ClosureAlert — LA Restaurant Health Violation Leads</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,41 +15,53 @@
   }
   a { color: inherit; }
 
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
   /* HERO */
   .hero {
-    background: #111;
-    color: #fff;
-    padding: 80px 24px 72px;
+    background: #fff;
+    color: #1a1a1a;
+    padding: 64px 24px 48px;
+    border-bottom: 3px solid #e53e3e;
   }
   .hero-inner {
-    max-width: 720px;
+    max-width: 680px;
     margin: 0 auto;
   }
-  .hero-badge {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+  .hero-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: #e53e3e;
-    border: 1px solid #e53e3e;
-    padding: 4px 12px;
-    border-radius: 2px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
   .hero h1 {
-    font-size: 40px;
-    line-height: 1.15;
+    font-size: 36px;
+    line-height: 1.2;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     letter-spacing: -0.5px;
   }
-  .hero p {
+  .hero h1 .highlight {
+    color: #e53e3e;
+  }
+  .hero .tagline {
     font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  .hero p {
+    font-size: 15px;
     line-height: 1.6;
-    color: #a0a0a0;
-    margin-bottom: 32px;
-    max-width: 580px;
+    color: #888;
+    margin-bottom: 28px;
+    max-width: 560px;
   }
   .cta-btn {
     display: inline-block;
@@ -64,121 +77,35 @@
     cursor: pointer;
   }
   .cta-btn:hover { background: #c53030; }
-  .cta-secondary {
-    display: inline-block;
-    color: #a0a0a0;
-    font-size: 14px;
-    margin-left: 20px;
-    text-decoration: none;
-    border-bottom: 1px solid #444;
+  .cta-btn.secondary {
+    background: #111;
+    color: #fff;
   }
-  .cta-secondary:hover { color: #fff; border-color: #fff; }
+  .cta-btn.secondary:hover { background: #333; }
 
-  /* WHAT YOU GET */
-  .what-you-get {
-    padding: 56px 24px;
-    background: #fff;
-    border-top: 3px solid #e53e3e;
+  /* CONTENT */
+  .section {
+    padding: 48px 0;
   }
-  .what-you-get-inner {
-    max-width: 720px;
-    margin: 0 auto;
+  .section + .section {
+    border-top: 1px solid #eee;
   }
-  .what-you-get h2 {
-    font-size: 24px;
+  .section h2 {
+    font-size: 22px;
     font-weight: 700;
-    margin-bottom: 28px;
-  }
-  .enrichment-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: #e2e2e2;
-    border: 1px solid #e2e2e2;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-  @media (max-width: 500px) { .enrichment-grid { grid-template-columns: 1fr; } }
-  .enrichment-item {
-    padding: 20px 24px;
-    background: #fff;
-  }
-  .enrichment-item .label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #888;
-    margin-bottom: 4px;
-  }
-  .enrichment-item .value {
-    font-size: 15px;
-    font-weight: 600;
-  }
-  .enrichment-item .value.red { color: #c53030; }
-  .enrichment-item .value a { color: #2563eb; text-decoration: none; }
-  .enrichment-note {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-  }
-  .enrichment-note strong { color: #1a1a1a; }
-
-  /* LIVE DATA */
-  .data-section {
-    padding: 64px 24px;
-    background: #fafafa;
-  }
-  .data-inner {
-    max-width: 860px;
-    margin: 0 auto;
-  }
-  .data-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
     margin-bottom: 8px;
-    flex-wrap: wrap;
-    gap: 8px;
   }
-  .data-header h2 {
-    font-size: 28px;
-    font-weight: 700;
-  }
-  .data-header .live-tag {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #e53e3e;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .live-tag::before {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background: #e53e3e;
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
-  .data-subtitle {
+  .section .subtitle {
+    font-size: 14px;
     color: #666;
-    font-size: 15px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
+
+  /* DATA TABLE */
   .data-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
-    background: #fff;
     border: 1px solid #e2e2e2;
     border-radius: 4px;
     overflow: hidden;
@@ -189,249 +116,47 @@
   }
   .data-table th {
     text-align: left;
-    padding: 12px 16px;
+    padding: 10px 14px;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.8px;
     text-transform: uppercase;
   }
   .data-table td {
-    padding: 11px 16px;
+    padding: 10px 14px;
     border-bottom: 1px solid #eee;
   }
   .data-table tr:last-child td { border-bottom: none; }
   .data-table tbody tr:hover { background: #fef2f2; }
   .data-table .violation { color: #c53030; font-weight: 500; }
   .data-table .closed-date { color: #888; font-size: 13px; }
-  .data-table .locked { color: #ccc; }
+  .data-table .locked { color: #ccc; font-size: 12px; }
   .data-note {
     text-align: center;
     color: #888;
     font-size: 13px;
-    margin-top: 16px;
+    margin-top: 14px;
   }
   .data-note strong { color: #1a1a1a; }
-  .data-callout {
-    text-align: center;
-    margin-top: 20px;
-    padding: 14px;
-    background: #fff7ed;
-    border: 1px solid #fed7aa;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #9a3412;
-  }
-
-  /* DELIVERY CHANNELS */
-  .value-section {
-    padding: 64px 24px;
-  }
-  .value-inner {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  .value-inner h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-  .value-inner > p {
-    color: #666;
-    font-size: 15px;
-    margin-bottom: 36px;
-  }
-  .channels {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  @media (max-width: 600px) { .channels { grid-template-columns: 1fr; } }
-  .channel {
-    padding: 24px;
-    border: 1px solid #e2e2e2;
-    border-radius: 4px;
-  }
-  .channel h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-  .channel p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-  }
-
-  /* PRICING */
-  .pricing-section {
-    padding: 64px 24px;
-    background: #111;
-    color: #fff;
-  }
-  .pricing-inner {
-    max-width: 640px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .pricing-inner h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-  .pricing-inner > p {
-    color: #888;
-    margin-bottom: 36px;
-    font-size: 15px;
-  }
-  .pricing-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-bottom: 28px;
-  }
-  @media (max-width: 500px) { .pricing-cards { grid-template-columns: 1fr; } }
-  .price-card {
-    padding: 32px 24px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    text-align: center;
-  }
-  .price-card.featured {
-    border-color: #e53e3e;
-    background: #1a1a1a;
-  }
-  .price-card .amount {
-    font-size: 36px;
-    font-weight: 700;
-  }
-  .price-card .amount span {
-    font-size: 16px;
-    font-weight: 400;
-    color: #888;
-  }
-  .price-card .plan-name {
-    font-size: 14px;
-    font-weight: 600;
-    margin: 4px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  .price-card .plan-desc {
-    font-size: 13px;
-    color: #888;
-    margin-top: 4px;
-  }
-  .plan-includes {
-    text-align: left;
-    font-size: 13px;
-    color: #aaa;
-    margin-top: 16px;
-    line-height: 1.8;
-  }
-  .plan-includes div::before {
-    content: '—';
-    margin-right: 8px;
-    color: #555;
-  }
-  .pricing-note {
-    color: #888;
-    font-size: 14px;
-    margin-bottom: 28px;
-  }
-
-  /* FORM */
-  .form-section {
-    padding: 64px 24px;
-  }
-  .form-inner {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-  .form-inner h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 4px;
-  }
-  .form-inner > p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 28px;
-  }
-  .form-group {
-    margin-bottom: 18px;
-  }
-  .form-group label {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  .form-group label .optional {
-    font-weight: 400;
-    color: #999;
-  }
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group input[type="tel"] {
-    width: 100%;
-    padding: 10px 14px;
-    border: 1px solid #d1d1d1;
-    border-radius: 4px;
-    font-size: 15px;
-    font-family: inherit;
-  }
-  .form-group input:focus {
-    outline: none;
-    border-color: #111;
-  }
-  .checkbox-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .checkbox-group label {
-    font-weight: 400;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
-  }
-  .submit-btn {
-    width: 100%;
-    background: #111;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: inherit;
-    margin-top: 8px;
-  }
-  .submit-btn:hover { background: #333; }
 
   /* FOOTER */
   footer {
-    padding: 40px 24px;
-    border-top: 1px solid #e2e2e2;
+    padding: 32px 24px;
+    border-top: 1px solid #eee;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     color: #999;
   }
-  footer a { color: #666; }
 
   /* MOBILE */
   @media (max-width: 600px) {
-    .hero { padding: 56px 20px 48px; }
+    .hero { padding: 48px 20px 40px; }
     .hero h1 { font-size: 28px; }
-    .hero p { font-size: 16px; }
-    .cta-secondary { display: block; margin: 16px 0 0; }
+    .hero p { font-size: 14px; }
     .data-table { font-size: 13px; }
-    .data-table th, .data-table td { padding: 9px 10px; }
+    .data-table th, .data-table td { padding: 8px 10px; }
+    .data-table .locked { display: none; }
+    .data-table th:last-child { display: none; }
   }
 </style>
 </head>
@@ -440,64 +165,20 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">LA County</div>
-    <h1>Restaurant closures and failed inspections, ready to act on before your competitors find them.</h1>
-    <p>Every restaurant shut down or scored below 90 in LA County — with phone number, address, Google Maps link, and website. Delivered twice a week so you can pick up the phone and close the deal.</p>
-    <a href="#signup" class="cta-btn">Get Started — $200/month</a>
-    <a href="#pricing" class="cta-secondary">See pricing</a>
+    <div class="hero-label">Closure Alert <span style="font-weight: 400; color: #999; font-size: 11px; letter-spacing: 0.5px;">· LA County</span></div>
+    <h1>Restaurants <span class="highlight">close</span> for health violations. You <span class="highlight">close</span> the deal.</h1>
+    <p class="tagline">For pest control and commercial cleaning companies.</p>
+    <p>Phone numbers, addresses, and Google Maps links for every restaurant shut down or at risk in LA County. Delivered every Monday and Thursday.</p>
+    <a href="#data" class="cta-btn secondary">See the data</a>
   </div>
 </section>
 
-<!-- WHAT SUBSCRIBERS GET -->
-<section class="what-you-get">
-  <div class="what-you-get-inner">
-    <h2>What you get for every closure and failed inspection</h2>
-    <div class="enrichment-grid">
-      <div class="enrichment-item">
-        <div class="label">Restaurant</div>
-        <div class="value">Flying Chopstix</div>
-      </div>
-      <div class="enrichment-item">
-        <div class="label">Address</div>
-        <div class="value">174 E Carson St, Carson, CA</div>
-      </div>
-      <div class="enrichment-item">
-        <div class="label">Violation</div>
-        <div class="value red">Vermin Infestation</div>
-      </div>
-      <div class="enrichment-item">
-        <div class="label">Closed</div>
-        <div class="value">April 3, 2026</div>
-      </div>
-      <div class="enrichment-item">
-        <div class="label">Phone</div>
-        <div class="value">(310) 555-0147</div>
-      </div>
-      <div class="enrichment-item">
-        <div class="label">Website</div>
-        <div class="value"><a href="#">flyingchopstix.com</a></div>
-      </div>
-      <div class="enrichment-item">
-        <div class="label">Google Maps</div>
-        <div class="value"><a href="#">Direct link — tap for directions</a></div>
-      </div>
-      <div class="enrichment-item">
-        <div class="label">Status</div>
-        <div class="value red">STILL CLOSED</div>
-      </div>
-    </div>
-    <p class="enrichment-note"><strong>This is one entry.</strong> You get every active closure and every restaurant that scored below 90 — with contact info already pulled. Open the spreadsheet, pick up the phone, pitch your services to a restaurant that needs you right now.</p>
-  </div>
-</section>
+<div class="container">
 
-<!-- LIVE DATA PREVIEW -->
-<section class="data-section">
-  <div class="data-inner">
-    <div class="data-header">
-      <h2>28 Restaurants Shut Down Right Now</h2>
-      <div class="live-tag">Live data</div>
-    </div>
-    <p class="data-subtitle">Active closures in LA County. This is real, current data — not a demo.</p>
+  <!-- DATA TABLE -->
+  <div class="section" id="data">
+    <h2>28 restaurants shut down in LA County</h2>
+    <p class="subtitle">April 2 update. We track what the county publishes — every closure, every failed inspection.</p>
 
     <table class="data-table">
       <thead>
@@ -511,87 +192,54 @@
       </thead>
       <tbody>
         <tr><td>Flying Chopstix</td><td>Carson</td><td class="closed-date">Apr 3</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
-        <tr><td>Olguitas Cocina</td><td>Pico Rivera</td><td class="closed-date">Apr 2</td><td class="violation">Under Investigation</td><td class="locked">Subscribers only</td></tr>
+        <tr><td>Olguitas Cocina</td><td>Pico Rivera</td><td class="closed-date">Apr 2</td><td class="violation">Inspection Score Below 70</td><td class="locked">Subscribers only</td></tr>
         <tr><td>Polly's Pies</td><td>Montebello</td><td class="closed-date">Mar 26</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
         <tr><td>Samosa House</td><td>Santa Monica</td><td class="closed-date">Mar 24</td><td class="violation">Sewage Discharge</td><td class="locked">Subscribers only</td></tr>
         <tr><td>Coldstone Creamery</td><td>Los Angeles</td><td class="closed-date">Mar 23</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
-        <tr><td>Baoshutang Restaurant</td><td>West Covina</td><td class="closed-date">Mar 23</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
         <tr><td>Korean BBQ House</td><td>Los Angeles</td><td class="closed-date">Mar 20</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
         <tr><td>La Ramada Restaurant</td><td>Huntington Park</td><td class="closed-date">Mar 20</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
         <tr><td>Paradise Biryani Pointe</td><td>Artesia</td><td class="closed-date">Mar 19</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
-        <tr><td>Tacos y Burritos Metro B</td><td>La Puente</td><td class="closed-date">Mar 19</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
         <tr><td>Rick's Burger</td><td>Alhambra</td><td class="closed-date">Mar 17</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
         <tr><td>Spitz Eagle Rock</td><td>Los Angeles</td><td class="closed-date">Feb 26</td><td class="violation">Vermin Infestation</td><td class="locked">Subscribers only</td></tr>
       </tbody>
     </table>
-    <p class="data-note">Showing 12 of 28 active closures. <strong>Subscribers get full contact info, addresses, and Google Maps links for every entry.</strong></p>
-    <div class="data-callout">Plus 52 restaurants scored below 90 on their last inspection this week — all with contact info ready.</div>
-  </div>
-</section>
-
-<!-- DELIVERY CHANNELS -->
-<section class="value-section">
-  <div class="value-inner">
-    <h2>Four ways to get the data</h2>
-    <p>All channels included with every plan. Use one or all of them.</p>
-    <div class="channels">
-      <div class="channel">
-        <h3>Email</h3>
-        <p>Full summary delivered to your inbox every Monday and Thursday at 7am. Ready to scan in 30 seconds.</p>
-      </div>
-      <div class="channel">
-        <h3>Text Alerts</h3>
-        <p>SMS with restaurant name, violation type, and a direct Google Maps link. Act from your phone.</p>
-      </div>
-      <div class="channel">
-        <h3>Live Spreadsheet</h3>
-        <p>Google Sheet with every closure and low score. Phone numbers, addresses, maps links. Sort, filter, assign to your team.</p>
-      </div>
-      <div class="channel">
-        <h3>Map View</h3>
-        <p>Every closure plotted on a map. Color coded by violation type. Tap any pin for directions.</p>
-      </div>
+    <p class="data-note">Showing 10 of 28 active closures. <strong>Subscribers get phone numbers, addresses, and Google Maps links for every entry.</strong></p>
+    <div style="text-align: center; margin-top: 24px;">
+      <a href="#signup" class="cta-btn">Get Started — $200/month</a>
     </div>
   </div>
-</section>
 
-<!-- PRICING -->
-<section class="pricing-section" id="pricing">
-  <div class="pricing-inner">
-    <h2>Simple pricing</h2>
-    <p>No contracts. Cancel anytime.</p>
-    <div style="max-width: 340px; margin: 0 auto;">
-      <div class="price-card" style="border-color: #e53e3e;">
-        <div class="amount">$200<span>/mo</span></div>
-        <div class="plan-name">Standard</div>
-        <div class="plan-desc">Twice weekly — Monday + Thursday</div>
-        <div class="plan-includes">
-          <div>All closures and low scores</div>
-          <div>Phone, address, website, maps link</div>
-          <div>Email, SMS, spreadsheet, and map</div>
-        </div>
-      </div>
-    </div>
-    <p class="pricing-note">Cancel anytime. No contracts.</p>
-    <!-- TODO: Add Stripe payment link when ready -->
-    <!-- <a href="[STRIPE_CHECKOUT_URL]" class="cta-btn">Get Started</a> -->
-    <a href="#signup" class="cta-btn">Get Started</a>
+  <!-- WHAT YOU GET + ROI + DELIVERY -->
+  <div class="section">
+    <h2>What you get for each lead</h2>
+    <p class="subtitle">Every closure and low score, enriched with contact info and shipped directly to you — no digging through county websites.</p>
+    <ul style="padding-left: 20px; font-size: 14px; line-height: 1.8; margin-bottom: 24px;">
+      <li><strong>Flying Chopstix</strong> — <span style="color: #c53030;">Vermin Infestation</span> — Closed per LA County (Apr 3)
+        <ul style="padding-left: 20px; color: #555;">
+          <li>174 E Carson St, Carson, CA 90745</li>
+          <li>(310) 549-2634 · <a href="https://www.google.com/maps/search/Flying+Chopstix+174+E+Carson+St+Carson+CA" style="color: #2563eb;">Google Maps</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <p style="font-size: 15px; font-weight: 700; color: #111; margin-bottom: 8px;">Leads that need you yesterday.</p>
+    <p style="font-size: 14px; color: #555; line-height: 1.6; margin-bottom: 16px;">Every restaurant on this list is either shut down for a health violation or at risk of it. They need pest control, deep cleaning, or both. You get the list, you make the call, you close the job.</p>
+    <p style="font-size: 14px; color: #555; line-height: 1.6;">Delivered by email, text, spreadsheet, or map — your choice. Every Monday and Thursday morning.</p>
   </div>
-</section>
 
-<!-- SIGNUP FORM -->
-<section class="form-section" id="signup">
-  <div style="max-width: 640px; margin: 0 auto; text-align: center;">
-    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 4px;">Get started</h2>
-    <p style="color: #666; font-size: 14px; margin-bottom: 24px;">Fill out the form below and we'll have you set up before the next delivery.</p>
+  <!-- FORM -->
+  <div class="section" id="signup" style="text-align: center;">
+    <h2>Get started — $200/month, cancel anytime</h2>
+    <p class="subtitle">Sign up below. We'll email you within 24 hours with payment details.</p>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-TfMo4JPT4YwX-eHl4IY4T0AHQlQQzRzs10EXjyiqovH_8A/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid #e2e2e2; border-radius: 4px;">Loading...</iframe>
   </div>
-</section>
+
+</div>
 
 <!-- FOOTER -->
 <footer>
   <p>Data sourced from LA County Department of Public Health public records.</p>
-  <p style="margin-top: 8px;">Questions? <a href="mailto:[YOUR_EMAIL]">[YOUR_EMAIL]</a></p>
+  <p style="margin-top: 6px;">Built by Ara in San Francisco. Questions? varma [dot] ara [at] gmail [dot] com</p>
 </footer>
 
 </body>
