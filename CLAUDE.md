@@ -1,4 +1,4 @@
-# HealthyLA — Project Instructions
+# ClosureAlert — Project Instructions
 
 ## Activity Log (REQUIRED)
 
